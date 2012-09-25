@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "highlighter": "square",
+    "coordinates": [1,2,3,4],
+    "dateTime": "13:30 PST - 1/15/12",
+    "comments": [
+      {
+        "type": "text",
+        "file": null,
+        "image": null,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "author": "Alex Grande",
+        "id": 1
+      },
+      {
+        "type": "text",
+        "file": null,
+        "image": null,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo",
+        "author": "Peter Philips",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "highlighter": "square",
+    "coordinates": [1,2,3,4],
+    "dateTime": "13:30 PST - 1/15/12",
+    "comments": [
+      {
+        "type": "text",
+        "file": null,
+        "image": null,
+        "text": "e et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "author": "Howard Wong",
+        "id": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,159 @@
+.annotation {
+  width: 90%;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2F2F2F), to(#000));
+  height: 500px;
+  border-radius: 8px;
+  margin-top: 25px;
+  box-shadow: 0 0 100px 1px #000;
+}
+
+.annotation ul,
+.annotation ol {
+  margin: 0;
+  padding: 0;
+}
+
+.annotation .header {
+  height: 24px;
+  border-bottom: 1px solid #939393;
+  padding: 3px 14px;
+}
+
+.annotation .content-bucket {
+  position: relative;
+}
+
+.annotation .image-wrapper {
+  width: 70%;
+  min-height: 468px;
+  display: -webkit-box; 
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+
+.annotation .comment-wrapper {
+  min-height: 100%;
+  border-left: 1px solid #939393;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #3C3C3C;
+  color: white;
+}
+
+.annotation .comment-wrapper header {
+  padding: 15px 5px;
+  border-bottom: 1px solid #939393;
+}
+
+.annotation .comment-wrapper h2 {
+  margin: 0 0 4px 0;
+}
+
+.annotation .comment-wrapper header input {
+  border: 1px solid #939393;
+  padding: 15px 3px;
+  background-image: -webkit-linear-gradient(top, #2F2F2F, black);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.annotation .comment-wrapper header .span3 {
+  text-align: right;
+}
+
+
+.annotation .comment-wrapper header a {
+  padding: 0px 7px;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #949494 !important;
+}
+
+.annotation .comments {
+  height: 382px;
+  overflow-x: hidden;
+  oveflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.annotation .comments .trigger {
+  padding: 7px 5px;
+  font-weight: 600;
+  background-image: -webkit-linear-gradient(top, #2F2F2F, black);
+}
+
+.annotation .comments .open {
+  border-bottom: 0;
+}
+
+.annotation .comments .trigger p {
+  margin: 0;
+}
+
+.annotation .comments .avatar {
+  float: left;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.annotation .comments .comment {
+  float: left;
+  width: 80%;
+}
+
+.annotation .comment-wrapper .drawer {
+  border-bottom: 1px solid #939393;
+}
+
+.annotation .comments li {
+  padding: 10px 0;
+  margin: 0 5px;
+  border-bottom: 1px dotted #939393;
+}
+
+.annotation .comments li:last-child {
+  border-bottom: 0;
+}
+
+.annotation .comments p {
+  margin: 0 0 5px 0;
+}
+
+.annotation .comments .time {
+  font-size: 11px;
+  color: #666;
+}
+
+
+@media (max-width: 979px) {
+  .annotation {
+    width: 100%;
+    box-shadow: none;
+    min-height: 100%;
+    margin-top: 0;
+    border-radius: 0;
+    background: #3C3C3C;
+  }
+  
+  .annotation .comment-wrapper {
+    width: auto;
+    position: static;
+    border-radius: 0 0 0 0;
+    border-left: none;
+    
+  }
+  
+  .annotation .image-wrapper {
+    width: 100%;
+    min-height: 100%;
+  }
+  
+
+}

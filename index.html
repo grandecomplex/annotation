@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="assets/stylesheets/all.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<title>Annotation Tool</title>
+</head>
+<body>
+
+  <section class="annotation">
+    <header class="header">
+      <nav>
+        <ul>
+          <li><img src="assets/images/icons/marquee.png" width="20" height="20" alt="Marquee"></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="content-bucket">
+      
+      <div class="image-wrapper">
+        
+      </div>
+      
+    
+      <aside class="comment-wrapper">
+        <header>
+          <input class="form-search" placeholder="Search" autosave="searchdoc" results="10" id="search" autocomplete="off" type="search"/>
+        </header>
+        
+        <section class="comments">
+         
+        </section>
+      </aside>
+    
+    </div>
+
+  </section>  
+  
+  
+  <script type="text/x-handlebars" data-template-name="comment-threads">
+    {{#each commentThreads}}
+      <div class="trigger open">
+        <p>{{dateTime}}</p>
+      </div>
+      <div class="drawer">
+        <ul>
+          {{#each comments}}
+            <li class="clearfix">
+              <div class="avatar">
+              
+              {{#if avatar}}
+                <img src="{{avatar}}" width="25" height="25" alt="Avatar">
+              {{else}}
+                <img src="assets/images/icons/avatar.png" width="25" height="25" alt="Avatar">
+              {{/if}}
+              
+              </div>
+              <div class="comment">
+                <p><a href="#">{{author}}</a> {{text}}</p>
+                <p class="time"></p>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/each}}
+  </script>
+  
+  <script type="text/x-handlebars" data-template-name="main-image">
+
+    <img {{bindAttr src="path"}}  alt="Sample Image">
+  </script>
+
+
+<script src="assets/javascripts/libs/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/javascripts/libs/handlebars-1.0.0.beta.6.js" type="text/javascript" charset="utf-8"></script>
+  
+<script src="assets/javascripts/libs/ember.1.0.pre.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="assets/javascripts/libs/ember-touch.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="assets/javascripts/app.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://debug.phonegap.com/target/target-script-min.js#grande"></script>
+
+
+</body>
+</html>
