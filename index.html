@@ -28,18 +28,18 @@
       
     
       <aside class="comment-wrapper">
-        <header>
+        <!-- <header>
           <input class="form-search" placeholder="Search" autosave="searchdoc" results="10" id="search" autocomplete="off" type="search"/>
-        </header>
+        </header> -->
         
         <section class="comments">
          
         </section>
-      </aside>
+      </aside> 
     
-    </div>
+    </div> <!-- end of content-bucket -->
 
-  </section>  
+  </section>  <!-- end of annotation tool -->
   
   
   <script type="text/x-handlebars" data-template-name="comment-threads">
@@ -77,15 +77,26 @@
   </script>
 
 
-<script src="assets/javascripts/libs/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="assets/javascripts/libs/handlebars-1.0.0.beta.6.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/javascripts/libs/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8" ></script>
+  <script src="assets/javascripts/libs/handlebars-1.0.0.beta.6.js" type="text/javascript" charset="utf-8" ></script>
   
-<script src="assets/javascripts/libs/ember.1.0.pre.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/javascripts/libs/ember.1.0.pre.js" type="text/javascript" charset="utf-8" async></script>
 
-<script src="assets/javascripts/libs/ember-touch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/javascripts/libs/ember-touch.js" type="text/javascript" charset="utf-8"></script>
 
-<script src="assets/javascripts/app.js" type="text/javascript" charset="utf-8"></script>
-<script src="http://debug.phonegap.com/target/target-script-min.js#grande"></script>
+  <script src="assets/javascripts/app.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="assets/javascripts/app/models/comments.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/javascripts/app/models/commentThreads.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/javascripts/app/models/image.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="assets/javascripts/app/controllers/commentThreadController.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/javascripts/app/controllers/imageController.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="assets/javascripts/app/views/commentThreadsView.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/javascripts/app/views/imageView.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="assets/javascripts/app/helpers/apiClient.js" type="text/javascript" charset="utf-8"></script>
 
 
 </body>
